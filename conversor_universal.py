@@ -231,6 +231,17 @@ def tamano_datos():
         st.write(f"{terabytes} terabytes equivalen a {petabytes} petabytes.")
 
 def main():
+    # Cambiar el color de fondo
+    st.markdown(
+        """
+        <style>
+        body {
+            background-color: #87CEEB; /* Color azul claro */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
     st.title("Conversor Universal")
     categoria = st.selectbox("Selecciona una categoría", ["Temperatura", "Longitud", "Peso/Masa",
                                                           "Volumen", "Tiempo", "Velocidad",
